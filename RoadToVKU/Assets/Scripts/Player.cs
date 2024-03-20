@@ -10,8 +10,16 @@ public class Player : MonoBehaviour
     //Private Fields
     Rigidbody2D rb;
     Animator animator;
+    public Transform groundCheckCollider;
+    public LayerMask groundLayer;
+
+    const float groundCheckRadius = 0.2f;
     float horizontalValue;
     float runSpeedModifier = 2f;
+    public int totalJumps;
+    int availableJumps;
+
+    bool isGrounded = false;
     bool isRunning=false;
     bool facingRight = true;
 
@@ -41,13 +49,29 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        GroundCheck();
         Move(horizontalValue);
+    }
+
+    void GroundCheck()
+    {
+        
+        isGrounded = false;
+        //Kiểm tra xem GroundCheckObject có va chạm với cái khác không
+        //2D Colliders nằm trong "Ground" Layer
+        //If yes (isGrounded true) else (isGrounded false)
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundLayer);
+        if (colliders.Length > 0)
+        {
+            isGrounded = true;
+        }
+            
     }
 
     void Move(float dir)
     {
         //Đặt giá trị của x bằng dir và speed
-        float xVal = dir * speed * 100 * Time.deltaTime;
+        float xVal = dir * speed * 100 * Time.fixedDeltaTime;
 
         // Nếu chúng ta đang chạy nhiều lần với Running modifier (cao hơn)
         if (isRunning)
