@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //Public Feilds
-    public float speed = 1;
-
     //Private Fields
     Rigidbody2D rb;
     Animator animator;
@@ -14,14 +11,27 @@ public class Player : MonoBehaviour
     public LayerMask groundLayer;
 
     const float groundCheckRadius = 0.2f;
+    //const float overheadCheckRadius = 0.2f;
+    //const float wallCheckRadius = 0.2f;
+    [SerializeField] float speed = 2;
+    [SerializeField] float jumpPower = 500;
+    //[SerializeField] float slideFactor = 0.2f;
+    //public int totalJumps;
+    //int availableJumps;
     float horizontalValue;
     float runSpeedModifier = 2f;
-    public int totalJumps;
-    int availableJumps;
+    //float crouchSpeedModifier = 0.5f;
 
-    bool isGrounded = false;
-    bool isRunning=false;
+    
+    [SerializeField] bool isGrounded;
+    bool isRunning;
     bool facingRight = true;
+    bool jump;
+    bool crouchPressed;
+    bool multipleJump;
+    bool coyoteJump;
+    bool isSliding;
+    bool isDead = false;
 
     void Awake()
     {
@@ -45,12 +55,22 @@ public class Player : MonoBehaviour
         {
             isRunning = false;
         }
+
+        //Nếu press Jump button cho phép nhảy 
+        if (Input.GetButtonDown("Jump"))
+        {
+            jump = true;
+        }else if (Input.GetButtonUp("Jump"))
+        {
+            jump= false;
+        }
+            
     }
 
     void FixedUpdate()
     {
         GroundCheck();
-        Move(horizontalValue);
+        Move(horizontalValue, jump);
     }
 
     void GroundCheck()
@@ -68,8 +88,20 @@ public class Player : MonoBehaviour
             
     }
 
-    void Move(float dir)
+   
+
+    void Move(float dir,bool jumpFlag)
     {
+        //If the player is grounded and pressed space Jump
+        if (isGrounded && jumpFlag)
+        {
+            isGrounded = false;
+            jumpFlag = false;
+            //Add jump force
+            rb.AddForce(new Vector2(0f,jumpPower));
+        }
+
+        #region Move & Run
         //Đặt giá trị của x bằng dir và speed
         float xVal = dir * speed * 100 * Time.fixedDeltaTime;
 
@@ -98,6 +130,6 @@ public class Player : MonoBehaviour
         //(0 idle - 4 running)
         // Đặt float xVelocity theo giá trị x của vận tốc RigidBody2D
         animator.SetFloat("xVelocity", Mathf.Abs(rb.velocity.x));
-
+        #endregion
     }
 }
