@@ -2,25 +2,27 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    public Animator anim;
+    private Rigidbody2D rb;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        float hDirection = Input.GetAxis("Horizontal");
+        if (hDirection > 0)
         {
             rb.velocity = new Vector2(2, 0);
             transform.localScale = new Vector2(0.1f, 0.1f);
             anim.SetBool("running", true);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (hDirection < 0)
         {
             rb.velocity = new Vector2(-2, 0);
             transform.localScale = new Vector2(-0.1f, 0.1f);
