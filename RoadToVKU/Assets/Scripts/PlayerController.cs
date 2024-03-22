@@ -1,23 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    private Collider2D coll;
+
     private enum State { idle, run, jump };
-        private State state = State.idle;
+    private State state = State.idle;
+
+    [SerializeField] private LayerMask Ground;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        coll = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float hDirection = Input.GetAxis("Horizontal");
+
         if (hDirection > 0)
         {
             rb.velocity = new Vector2(2, 0);
@@ -32,7 +40,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
 
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(Ground)) 
         {
             rb.velocity = new Vector2(rb.velocity.x, 4f);
             state = State.jump;
