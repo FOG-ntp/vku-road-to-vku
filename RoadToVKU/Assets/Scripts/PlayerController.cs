@@ -3,6 +3,7 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -17,11 +18,17 @@ public class NewBehaviourScript : MonoBehaviour
         {
             rb.velocity = new Vector2(2, 0);
             transform.localScale = new Vector2(0.1f, 0.1f);
+            anim.SetBool("running", true);
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.velocity = new Vector2(-2, 0);
             transform.localScale = new Vector2(-0.1f, 0.1f);
+            anim.SetBool("running", true);
+        }
+        else
+        {
+            anim.SetBool("running", false);
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
