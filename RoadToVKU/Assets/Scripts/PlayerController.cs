@@ -16,12 +16,12 @@ public class NewBehaviourScript : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.velocity = new Vector2(2, 0);
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(0.1f, 0.1f);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.velocity = new Vector2(-2, 0);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(-0.1f, 0.1f);
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
