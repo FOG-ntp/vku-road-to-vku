@@ -8,7 +8,7 @@ public class NewBehaviourScript : MonoBehaviour
     private Animator anim;
     private Collider2D coll;
 
-    private enum State { idle, run, jump };
+    private enum State { idle, run, jump, falling };
     private State state = State.idle;
 
     [SerializeField] private LayerMask Ground;
@@ -52,9 +52,22 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void VelocityState()
     {
-        if(state == State.jump)
+        //animation jumping
+        if (state == State.jump)
         {
+            if (rb.velocity.y < .1f)
+            {
+                state = State.falling;
+            }
+        }
 
+        //animation falling
+        else if (state == State.falling)
+        {
+            if (coll.IsTouchingLayers(Ground))
+            {
+                state = State.idle;
+            }
         }
         else if (Mathf.Abs(rb.velocity.x) > 2f)
         {
