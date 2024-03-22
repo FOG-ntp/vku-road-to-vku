@@ -3,6 +3,7 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     public Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,10 @@ public class NewBehaviourScript : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.velocity = new Vector2(-2, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 4f);
         }
     }
 }
