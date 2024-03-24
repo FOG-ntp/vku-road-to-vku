@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,8 +12,8 @@ public class NewBehaviourScript : MonoBehaviour
     private State state = State.idle;
 
     [SerializeField] private LayerMask Ground;
-    [SerializeField] private float speed = 2f;
-    [SerializeField] private float jumpForce = 5f;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpForce = 15f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,20 +28,35 @@ public class NewBehaviourScript : MonoBehaviour
     {
         float hDirection = Input.GetAxis("Horizontal");
 
-        if (hDirection > 0)
+        //if (hDirection > 0)
+        //{
+        //    rb.velocity = new Vector2(speed, 0);
+        //    transform.localScale = new Vector2(0.1f, 0.1f);
+        //}
+        //else if (hDirection < 0)
+        //{
+        //    rb.velocity = new Vector2(-speed, 0);
+        //    transform.localScale = new Vector2(-0.1f, 0.1f);
+        //}
+        //else
+        //{
+
+        //}
+        if (hDirection == 0)
         {
-            rb.velocity = new Vector2(speed, 0);
-            transform.localScale = new Vector2(0.1f, 0.1f);
-        }
-        else if (hDirection < 0)
-        {
-            rb.velocity = new Vector2(-speed, 0);
-            transform.localScale = new Vector2(-0.1f, 0.1f);
+            // Đặt vận tốc ngang của nhân vật về 0
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
         else
         {
+            // Xác định hướng di chuyển và thiết lập vận tốc ngang tương ứng
+            float newVelocityX = hDirection * speed ;
+            rb.velocity = new Vector2(newVelocityX, rb.velocity.y);
 
+            // Xác định và thiết lập hướng quay của nhân vật
+            transform.localScale = new Vector2(Mathf.Sign(hDirection) * 0.1f, 0.1f);
         }
+
         if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(Ground)) 
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
