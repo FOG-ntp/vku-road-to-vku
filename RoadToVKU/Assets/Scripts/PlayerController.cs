@@ -12,6 +12,8 @@ public class NewBehaviourScript : MonoBehaviour
     private State state = State.idle;
 
     [SerializeField] private LayerMask Ground;
+    [SerializeField] private float speed = 2f;
+    [SerializeField] private float jumpForce = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,12 +30,12 @@ public class NewBehaviourScript : MonoBehaviour
 
         if (hDirection > 0)
         {
-            rb.velocity = new Vector2(2, 0);
+            rb.velocity = new Vector2(speed, 0);
             transform.localScale = new Vector2(0.1f, 0.1f);
         }
         else if (hDirection < 0)
         {
-            rb.velocity = new Vector2(-2, 0);
+            rb.velocity = new Vector2(-speed, 0);
             transform.localScale = new Vector2(-0.1f, 0.1f);
         }
         else
@@ -42,7 +44,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(Ground)) 
         {
-            rb.velocity = new Vector2(rb.velocity.x, 4f);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             state = State.jump;
         }
 
