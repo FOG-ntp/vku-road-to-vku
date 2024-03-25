@@ -45,7 +45,7 @@ public class LevelManager : MonoBehaviour
         player.enabled = false;
         playerRenderer.enabled = false;
         //this.camera.isFollowing = false;
-        //ScoreManager.AddPoints(-this.pointPenaltyOnDeath);
+        ScoreManager.AddPoints(-this.pointPenaltyOnDeath);
         Debug.Log("Player Respawn");
         yield return new WaitForSeconds(respawnDelay);
         playerRigidbody2D.velocity = new Vector2(0, 0);
