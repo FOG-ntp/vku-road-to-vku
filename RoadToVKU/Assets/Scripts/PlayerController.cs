@@ -45,9 +45,19 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         //di chuyen
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (grounded)
+            doubleJumped = false;
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+            Jump();
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow) && !doubleJumped && !grounded)
+        {
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+            Jump();
+            doubleJumped = true;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -57,5 +67,11 @@ public class NewBehaviourScript : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
+    }
+
+    public void Jump()
+    {
+        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+        //this.myRigidbody2D.velocity = new Vector2(this.myRigidbody2D.velocity.x, this.jumpHeight);
     }
 }
