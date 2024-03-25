@@ -31,22 +31,24 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.myRigidbody2D = GetComponent<Rigidbody2D>();
-        this.anim = GetComponent<Animator>();
-        this.gravityStore = this.myRigidbody2D.gravityScale;
+        myRigidbody2D = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        gravityStore = myRigidbody2D.gravityScale;
     }
 
     void FixedUpdate()
     {
-        this.grounded = Physics2D.OverlapCircle(this.groundCheck.position, this.groundCheckRadius, this.whatIsGround);
+        grounded = Physics2D.OverlapCircle(groundCheck.position,groundCheckRadius, whatIsGround);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //di chuyen
+        //Move && Jump
         if (grounded)
             doubleJumped = false;
+
+        anim.SetBool("Grounded", grounded);
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
@@ -66,6 +68,17 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        }
+        anim.SetFloat("Speed", Mathf.Abs(myRigidbody2D.velocity.x));
+
+        //flipping character
+        if (myRigidbody2D.velocity.x > 0)
+        {
+            transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        }
+        else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+        {
+            transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);
         }
     }
 
