@@ -4,95 +4,58 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public float moveSpeed;
+    public float jumpHeight;
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask whatIsGround;
+    public Transform firePoint;
+    public GameObject ninjaStar;
+    public float shotDelay;
+    public float knockback;
+    public float knockbackLength;
+    public bool knockFromRight;
+    public float knockbackCount;
+    public bool onLadder;
+    public float climbSpeed;
+
+    private Rigidbody2D myRigidbody2D;
+    private bool grounded;
+    private bool doubleJumped;
     private Animator anim;
-    private Collider2D coll;
-
-    private enum State { idle, run, jump, falling };
-    private State state = State.idle;
-
-    [SerializeField] private LayerMask Ground;
-    [SerializeField] private float speed = 5f;
-    [SerializeField] private float jumpForce = 15f;
+    private float moveVelocity;
+    private float shotDelayCounter;
+    private float climbVelocity;
+    private float gravityStore;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        coll = GetComponent<Collider2D>();
+        this.myRigidbody2D = GetComponent<Rigidbody2D>();
+        this.anim = GetComponent<Animator>();
+        this.gravityStore = this.myRigidbody2D.gravityScale;
+    }
+
+    void FixedUpdate()
+    {
+        this.grounded = Physics2D.OverlapCircle(this.groundCheck.position, this.groundCheckRadius, this.whatIsGround);
     }
 
     // Update is called once per frame
     void Update()
     {
-        float hDirection = Input.GetAxis("Horizontal");
-
-        //if (hDirection > 0)
-        //{
-        //    rb.velocity = new Vector2(speed, 0);
-        //    transform.localScale = new Vector2(0.1f, 0.1f);
-        //}
-        //else if (hDirection < 0)
-        //{
-        //    rb.velocity = new Vector2(-speed, 0);
-        //    transform.localScale = new Vector2(-0.1f, 0.1f);
-        //}
-        //else
-        //{
-
-        //}
-        if (hDirection == 0)
+        //di chuyen
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            // Đặt vận tốc ngang của nhân vật về 0
-            rb.velocity = new Vector2(0, rb.velocity.y);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
         }
-        else
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            // Xác định hướng di chuyển và thiết lập vận tốc ngang tương ứng
-            float newVelocityX = hDirection * speed ;
-            rb.velocity = new Vector2(newVelocityX, rb.velocity.y);
-
-            // Xác định và thiết lập hướng quay của nhân vật
-            transform.localScale = new Vector2(Mathf.Sign(hDirection) * 0.1f, 0.1f);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
-
-        if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(Ground)) 
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            state = State.jump;
-        }
-
-        VelocityState();
-        anim.SetInteger("State", (int)state);
-    }
-
-    private void VelocityState()
-    {
-        //animation jumping
-        if (state == State.jump)
-        {
-            if (rb.velocity.y < .1f)
-            {
-                state = State.falling;
-            }
-        }
-
-        //animation falling
-        else if (state == State.falling)
-        {
-            if (coll.IsTouchingLayers(Ground))
-            {
-                state = State.idle;
-            }
-        }
-        else if (Mathf.Abs(rb.velocity.x) > 2f)
-        {
-            state = State.run;
-        }
-        else
-        {
-            state = State.idle;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
     }
 }
