@@ -38,7 +38,7 @@ public class OrangeShootController : MonoBehaviour
         if (other.tag == "Enemy")
         {
             Destroy(other.gameObject);
-            //other.GetComponent<EnemyHealthManager>().giveDamage(this.damageToGive);
+            other.GetComponent<EnemyHealthManager>().giveDamage(damageToGive);
         }
 
         Instantiate(impactEffect, transform.position, transform.rotation);

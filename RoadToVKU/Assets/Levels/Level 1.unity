@@ -1571,12 +1571,13 @@ GameObject:
   - component: {fileID: 214807343}
   - component: {fileID: 214807342}
   - component: {fileID: 214807341}
-  - component: {fileID: 214807340}
   - component: {fileID: 214807339}
   - component: {fileID: 214807338}
+  - component: {fileID: 214807345}
+  - component: {fileID: 214807346}
   m_Layer: 0
   m_Name: gorrasR_0 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1639,18 +1640,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &214807340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214807336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &214807341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1810,6 +1799,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &214807345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214807336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &214807346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214807336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &216642533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,9 +1840,10 @@ GameObject:
   - component: {fileID: 216642537}
   - component: {fileID: 216642536}
   - component: {fileID: 216642538}
-  - component: {fileID: 216642540}
   - component: {fileID: 216642539}
   - component: {fileID: 216642541}
+  - component: {fileID: 216642542}
+  - component: {fileID: 216642543}
   m_Layer: 0
   m_Name: poliR_0
   m_TagString: Enemy
@@ -2029,18 +2047,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 1298709692}
---- !u!114 &216642540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216642533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &216642541
 Animator:
   serializedVersion: 5
@@ -2062,6 +2068,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &216642542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216642533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &216642543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216642533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &243059776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,12 +2109,13 @@ GameObject:
   - component: {fileID: 243059783}
   - component: {fileID: 243059782}
   - component: {fileID: 243059781}
-  - component: {fileID: 243059780}
   - component: {fileID: 243059779}
   - component: {fileID: 243059778}
+  - component: {fileID: 243059785}
+  - component: {fileID: 243059786}
   m_Layer: 0
   m_Name: poliR_0 (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2143,18 +2178,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 680961730}
---- !u!114 &243059780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243059776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &243059781
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2314,6 +2337,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &243059785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243059776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &243059786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243059776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &248447809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,6 +2576,8 @@ RectTransform:
   m_Children:
   - {fileID: 833217167}
   - {fileID: 1834057531}
+  - {fileID: 1913477152}
+  - {fileID: 1980627499}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2545,12 +2598,13 @@ GameObject:
   - component: {fileID: 369720740}
   - component: {fileID: 369720739}
   - component: {fileID: 369720738}
-  - component: {fileID: 369720737}
   - component: {fileID: 369720736}
   - component: {fileID: 369720735}
+  - component: {fileID: 369720742}
+  - component: {fileID: 369720743}
   m_Layer: 0
   m_Name: gorrasR_0 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2613,18 +2667,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &369720737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369720733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &369720738
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2784,6 +2826,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &369720742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369720733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &369720743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369720733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &441448272
 GameObject:
   m_ObjectHideFlags: 0
@@ -2797,12 +2867,13 @@ GameObject:
   - component: {fileID: 441448279}
   - component: {fileID: 441448278}
   - component: {fileID: 441448277}
-  - component: {fileID: 441448276}
   - component: {fileID: 441448275}
   - component: {fileID: 441448274}
+  - component: {fileID: 441448281}
+  - component: {fileID: 441448282}
   m_Layer: 0
   m_Name: poliR_0 (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2865,18 +2936,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 2078106330}
---- !u!114 &441448276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441448272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &441448277
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3036,6 +3095,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &441448281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441448272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &441448282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441448272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &447261716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3203,6 +3290,10 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2102326974349990373, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
+      propertyPath: shotDelay
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2102326974349990373, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
       propertyPath: jumpHeight
       value: 4
       objectReference: {fileID: 0}
@@ -3221,6 +3312,10 @@ PrefabInstance:
     - target: {fileID: 2102326974349990373, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
       propertyPath: whatIsGround.m_Bits
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4007102749733668259, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 4007102749733668259, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
       propertyPath: m_BodyType
@@ -5737,12 +5832,13 @@ GameObject:
   - component: {fileID: 625264947}
   - component: {fileID: 625264946}
   - component: {fileID: 625264945}
-  - component: {fileID: 625264944}
   - component: {fileID: 625264943}
   - component: {fileID: 625264942}
+  - component: {fileID: 625264949}
+  - component: {fileID: 625264950}
   m_Layer: 0
   m_Name: poliR_0 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5805,18 +5901,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 1458675859}
---- !u!114 &625264944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625264940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &625264945
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5976,6 +6060,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &625264949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625264940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &625264950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625264940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &644358235
 GameObject:
   m_ObjectHideFlags: 0
@@ -7563,12 +7675,13 @@ GameObject:
   - component: {fileID: 814018973}
   - component: {fileID: 814018972}
   - component: {fileID: 814018971}
-  - component: {fileID: 814018970}
   - component: {fileID: 814018969}
   - component: {fileID: 814018968}
+  - component: {fileID: 814018975}
+  - component: {fileID: 814018976}
   m_Layer: 0
   m_Name: poliR_0 (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7631,18 +7744,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 447261717}
---- !u!114 &814018970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814018966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &814018971
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -7802,6 +7903,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &814018975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814018966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &814018976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814018966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &833217166
 GameObject:
   m_ObjectHideFlags: 0
@@ -9010,12 +9139,13 @@ GameObject:
   - component: {fileID: 906824898}
   - component: {fileID: 906824897}
   - component: {fileID: 906824896}
-  - component: {fileID: 906824895}
   - component: {fileID: 906824894}
   - component: {fileID: 906824893}
+  - component: {fileID: 906824900}
+  - component: {fileID: 906824901}
   m_Layer: 0
   m_Name: poliR_0 (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9078,18 +9208,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 1722072973}
---- !u!114 &906824895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906824891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &906824896
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -9249,6 +9367,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &906824900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906824891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &906824901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906824891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &913665495
 GameObject:
   m_ObjectHideFlags: 0
@@ -9520,6 +9666,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 791612617060036351, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
+      propertyPath: damageToGive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 791612617060036351, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
       propertyPath: impactEffect
       value: 
       objectReference: {fileID: 3157097479901391752, guid: 53f43742cae4dc848b751c14bd19d0c3, type: 3}
@@ -9528,16 +9678,20 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 791612617060036351, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
+      propertyPath: rotationSpeed
+      value: -360
+      objectReference: {fileID: 0}
+    - target: {fileID: 791612617060036351, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
       propertyPath: enemyDeathEffect
       value: 
       objectReference: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
     - target: {fileID: 2815915853690347215, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.531769
+      value: -3.17
       objectReference: {fileID: 0}
     - target: {fileID: 2815915853690347215, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.88569105
+      value: 1.98
       objectReference: {fileID: 0}
     - target: {fileID: 2815915853690347215, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10028,12 +10182,13 @@ GameObject:
   - component: {fileID: 1322511611}
   - component: {fileID: 1322511610}
   - component: {fileID: 1322511609}
-  - component: {fileID: 1322511608}
   - component: {fileID: 1322511607}
   - component: {fileID: 1322511606}
+  - component: {fileID: 1322511613}
+  - component: {fileID: 1322511614}
   m_Layer: 0
   m_Name: poliR_0 (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10096,18 +10251,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 1740936218}
---- !u!114 &1322511608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322511604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &1322511609
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10267,6 +10410,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1322511613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322511604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &1322511614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322511604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &1328303006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 722121132727804686, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
@@ -10325,11 +10496,12 @@ GameObject:
   - component: {fileID: 1332995112}
   - component: {fileID: 1332995111}
   - component: {fileID: 1332995115}
-  - component: {fileID: 1332995116}
   - component: {fileID: 1332995117}
+  - component: {fileID: 1332995118}
+  - component: {fileID: 1332995119}
   m_Layer: 0
   m_Name: gorras_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10508,18 +10680,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.394233, y: 3.533665}
   m_EdgeRadius: 0
---- !u!114 &1332995116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332995110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1332995117
 Animator:
   serializedVersion: 5
@@ -10541,6 +10701,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1332995118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332995110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &1332995119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332995110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &1339689071
 GameObject:
   m_ObjectHideFlags: 0
@@ -10554,12 +10742,13 @@ GameObject:
   - component: {fileID: 1339689078}
   - component: {fileID: 1339689077}
   - component: {fileID: 1339689076}
-  - component: {fileID: 1339689075}
   - component: {fileID: 1339689074}
   - component: {fileID: 1339689073}
+  - component: {fileID: 1339689080}
+  - component: {fileID: 1339689081}
   m_Layer: 0
   m_Name: poliR_0 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10622,18 +10811,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 993819360}
---- !u!114 &1339689075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339689071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &1339689076
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10793,6 +10970,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1339689080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339689071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &1339689081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339689071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &1367494705
 GameObject:
   m_ObjectHideFlags: 0
@@ -19118,11 +19323,12 @@ GameObject:
   - component: {fileID: 1697458722}
   - component: {fileID: 1697458721}
   - component: {fileID: 1697458720}
-  - component: {fileID: 1697458719}
   - component: {fileID: 1697458724}
+  - component: {fileID: 1697458725}
+  - component: {fileID: 1697458726}
   m_Layer: 0
   m_Name: gorras_0 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19142,18 +19348,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 644358236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1697458719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697458717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1697458720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19334,6 +19528,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1697458725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697458717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &1697458726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697458717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &1722072972
 GameObject:
   m_ObjectHideFlags: 0
@@ -19409,12 +19631,13 @@ GameObject:
   - component: {fileID: 1785631007}
   - component: {fileID: 1785631006}
   - component: {fileID: 1785631005}
-  - component: {fileID: 1785631004}
   - component: {fileID: 1785631009}
   - component: {fileID: 1785631010}
+  - component: {fileID: 1785631011}
+  - component: {fileID: 1785631012}
   m_Layer: 0
   m_Name: gorrasR_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19436,18 +19659,6 @@ Transform:
   - {fileID: 248447810}
   m_Father: {fileID: 644358236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1785631004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785631002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1785631005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19648,6 +19859,34 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   edgeCheck: {fileID: 248447810}
+--- !u!114 &1785631011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785631002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &1785631012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785631002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &1796027520
 GameObject:
   m_ObjectHideFlags: 0
@@ -19692,12 +19931,13 @@ GameObject:
   - component: {fileID: 1824663197}
   - component: {fileID: 1824663196}
   - component: {fileID: 1824663195}
-  - component: {fileID: 1824663194}
   - component: {fileID: 1824663193}
   - component: {fileID: 1824663192}
+  - component: {fileID: 1824663199}
+  - component: {fileID: 1824663200}
   m_Layer: 0
   m_Name: poliR_0 (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19760,18 +20000,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 1148385231}
---- !u!114 &1824663194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824663190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &1824663195
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -19931,6 +20159,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1824663199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824663190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &1824663200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824663190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &1827475421
 GameObject:
   m_ObjectHideFlags: 0
@@ -20054,7 +20310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301982242bddba440a8f1ca77eab6166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 1834057532}
 --- !u!1 &1847803516
 GameObject:
   m_ObjectHideFlags: 0
@@ -20086,6 +20342,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 814018967}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1913477151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913477152}
+  - component: {fileID: 1913477154}
+  - component: {fileID: 1913477153}
+  m_Layer: 0
+  m_Name: HealthTitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1913477152
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913477151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 365963724}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 106.4, y: -35.2}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1913477153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913477151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6cd3baff508898148b7e3a1dd1ef5e94, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Health:'
+--- !u!222 &1913477154
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913477151}
+  m_CullTransparentMesh: 1
 --- !u!1 &1928043450
 GameObject:
   m_ObjectHideFlags: 0
@@ -21140,6 +21475,101 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1980627498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1980627499}
+  - component: {fileID: 1980627502}
+  - component: {fileID: 1980627501}
+  - component: {fileID: 1980627503}
+  m_Layer: 0
+  m_Name: HealthCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1980627499
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980627498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 365963724}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 106, y: -35.2}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1980627501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980627498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6cd3baff508898148b7e3a1dd1ef5e94, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 10
+--- !u!222 &1980627502
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980627498}
+  m_CullTransparentMesh: 1
+--- !u!114 &1980627503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980627498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3719cf8cfccd14bb23a899e8939053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPlayerHealth: 3
+  text: {fileID: 1980627501}
+  isDead: 0
 --- !u!1 &1984662473
 GameObject:
   m_ObjectHideFlags: 0
@@ -22543,10 +22973,11 @@ GameObject:
   - component: {fileID: 1989169743}
   - component: {fileID: 1989169742}
   - component: {fileID: 1989169741}
-  - component: {fileID: 1989169740}
+  - component: {fileID: 1989169745}
+  - component: {fileID: 1989169746}
   m_Layer: 0
   m_Name: gorras_0 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22566,18 +22997,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 644358236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1989169740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989169738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1989169741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22737,6 +23156,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1989169745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989169738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &1989169746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989169738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &1989521860
 GameObject:
   m_ObjectHideFlags: 0
@@ -22915,10 +23362,11 @@ GameObject:
   - component: {fileID: 2008864908}
   - component: {fileID: 2008864907}
   - component: {fileID: 2008864906}
-  - component: {fileID: 2008864905}
+  - component: {fileID: 2008864910}
+  - component: {fileID: 2008864911}
   m_Layer: 0
   m_Name: gorras_0 (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22938,18 +23386,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 644358236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2008864905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008864903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2008864906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23109,6 +23545,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2008864910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008864903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &2008864911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008864903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &2009938194
 GameObject:
   m_ObjectHideFlags: 0
@@ -23122,12 +23586,13 @@ GameObject:
   - component: {fileID: 2009938201}
   - component: {fileID: 2009938200}
   - component: {fileID: 2009938199}
-  - component: {fileID: 2009938198}
   - component: {fileID: 2009938197}
   - component: {fileID: 2009938196}
+  - component: {fileID: 2009938203}
+  - component: {fileID: 2009938204}
   m_Layer: 0
   m_Name: poliR_0 (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23190,18 +23655,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   edgeCheck: {fileID: 210472117}
---- !u!114 &2009938198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009938194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &2009938199
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -23361,6 +23814,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2009938203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009938194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25268dd8f5588e041ada726b083aa8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 1
+  deathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  pointsOnDeath: 100
+--- !u!114 &2009938204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009938194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98a374376d9a41b3de38d7b3f3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &2015204325
 GameObject:
   m_ObjectHideFlags: 0

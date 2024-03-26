@@ -93,6 +93,17 @@ public class PlayerController : MonoBehaviour
             Instantiate(orangerShoot, firePoint.position, firePoint.rotation);
             shotDelayCounter = shotDelay;
         }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            shotDelayCounter -= Time.deltaTime;
+
+            if (shotDelayCounter <= 0)
+            {
+                shotDelayCounter = shotDelay;
+                Instantiate(orangerShoot, firePoint.position, firePoint.rotation);
+            }
+        }
     }
 
     public void Jump()
