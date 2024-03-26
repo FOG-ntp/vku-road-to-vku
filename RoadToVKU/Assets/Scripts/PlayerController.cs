@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask whatIsGround;
     public Transform firePoint;
-    public GameObject ninjaStar;
+    public GameObject orangerShoot;
     public float shotDelay;
     public float knockback;
     public float knockbackLength;
@@ -85,6 +85,13 @@ public class PlayerController : MonoBehaviour
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
         {
             transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);
+        }
+
+        //shooting
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(orangerShoot, firePoint.position, firePoint.rotation);
+            shotDelayCounter = shotDelay;
         }
     }
 
