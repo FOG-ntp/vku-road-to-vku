@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     private Renderer playerRenderer;
     private Rigidbody2D playerRigidbody2D;
     private float gravityStore;
-    //private CameraController camera;
+    private CameraController camera;
 
     // Use this for initialization
     void Start()
@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
         playerRenderer = player.GetComponent<Renderer>();
         playerRigidbody2D = player.GetComponent<Rigidbody2D>();
-        //this.camera = FindObjectOfType<CameraController>();
+        camera = FindObjectOfType<CameraController>();
         //this.healthManager = FindObjectOfType<HealthManager>();
     }
 
@@ -44,8 +44,8 @@ public class LevelManager : MonoBehaviour
         Instantiate(deathParticle, player.transform.position, player.transform.rotation);
         player.enabled = false;
         playerRenderer.enabled = false;
-        //this.camera.isFollowing = false;
-        ScoreManager.AddPoints(-this.pointPenaltyOnDeath);
+        camera.isFollowing = false;
+        ScoreManager.AddPoints(-pointPenaltyOnDeath);
         Debug.Log("Player Respawn");
         yield return new WaitForSeconds(respawnDelay);
         playerRigidbody2D.velocity = new Vector2(0, 0);
@@ -55,7 +55,7 @@ public class LevelManager : MonoBehaviour
         playerRenderer.enabled = true;
         //this.healthManager.FullHealth();
         //this.healthManager.isDead = false;
-        //this.camera.isFollowing = true;
-        Instantiate(this.respawnParticle, this.currentCheckpoint.transform.position, this.currentCheckpoint.transform.rotation);
+        camera.isFollowing = true;
+        Instantiate(respawnParticle, currentCheckpoint.transform.position, currentCheckpoint.transform.rotation);
     }
 }

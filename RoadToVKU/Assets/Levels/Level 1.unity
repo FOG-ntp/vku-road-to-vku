@@ -1725,7 +1725,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -2003,7 +2003,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -2184,7 +2184,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -2699,7 +2699,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -2906,7 +2906,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -3311,15 +3311,23 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6916009502118986547, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 903221278}
-    - targetCorrespondingSourceObject: {fileID: 6916009502118986547, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1109249764}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 722121132727804686, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
       insertIndex: 2
       addedObject: {fileID: 1328303013}
   m_SourcePrefab: {fileID: 100100000, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
+--- !u!114 &496175701 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2102326974349990373, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
+  m_PrefabInstance: {fileID: 496175700}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328303006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef5cb43ee7f12742911bdd35e49a03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &547791404 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1639237052074405053, guid: 458c1ffb1324cba45a75c4817fc78e52, type: 3}
@@ -5827,7 +5835,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -7653,7 +7661,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -8868,6 +8876,7 @@ GameObject:
   - component: {fileID: 903221277}
   - component: {fileID: 903221276}
   - component: {fileID: 903221275}
+  - component: {fileID: 903221279}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8955,12 +8964,28 @@ Transform:
   m_GameObject: {fileID: 903221274}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: -1.028, y: -0.619, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1328303012}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &903221279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903221274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd066496e8447a04e8ae8ab2eced515f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 496175701}
+  isFollowing: 1
+  xOffset: 0
+  yOffset: 1.5
 --- !u!1 &906824891
 GameObject:
   m_ObjectHideFlags: 0
@@ -9083,7 +9108,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -9993,7 +10018,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -10182,6 +10207,7 @@ GameObject:
   - component: {fileID: 1332995111}
   - component: {fileID: 1332995115}
   - component: {fileID: 1332995116}
+  - component: {fileID: 1332995117}
   m_Layer: 0
   m_Name: gorras_0
   m_TagString: Untagged
@@ -10218,7 +10244,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -10375,6 +10401,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1982a0f9fd21e4c4d9453b40b4381019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1332995117
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332995110}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9315f7990209734e84364595e2b5e51, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1339689071
 GameObject:
   m_ObjectHideFlags: 0
@@ -10497,7 +10544,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -18953,6 +19000,7 @@ GameObject:
   - component: {fileID: 1697458721}
   - component: {fileID: 1697458720}
   - component: {fileID: 1697458719}
+  - component: {fileID: 1697458724}
   m_Layer: 0
   m_Name: gorras_0 (1)
   m_TagString: Untagged
@@ -19061,7 +19109,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -19146,6 +19194,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1697458724
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697458717}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9315f7990209734e84364595e2b5e51, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1722072972
 GameObject:
   m_ObjectHideFlags: 0
@@ -19334,7 +19403,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -19613,7 +19682,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -22464,7 +22533,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -22836,7 +22905,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -23043,7 +23112,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07211149, y: -0.1153785}
@@ -24634,6 +24703,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 903221278}
   - {fileID: 1287537102}
   - {fileID: 1676818942}
   - {fileID: 496175700}
