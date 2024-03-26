@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -804730055518493173}
   - component: {fileID: 6092076300446879747}
   - component: {fileID: 791612617060036351}
+  - component: {fileID: 6957186718627872164}
   m_Layer: 8
   m_Name: OrangeShoot
   m_TagString: Untagged
@@ -163,8 +164,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   player: {fileID: 2102326974349990373, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
-  enemyDeathEffect: {fileID: 0}
-  impactEffect: {fileID: 0}
-  pointsForKill: 0
-  rotationSpeed: 0
-  damageToGive: 0
+  enemyDeathEffect: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
+  impactEffect: {fileID: 3157097479901391752, guid: 53f43742cae4dc848b751c14bd19d0c3, type: 3}
+  pointsForKill: 100
+  rotationSpeed: -360
+  damageToGive: 1
+--- !u!114 &6957186718627872164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534171047696982312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f93cf5835eb454dabf196381c97b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 2

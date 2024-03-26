@@ -1536,7 +1536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 210472117}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -1575,7 +1575,7 @@ GameObject:
   - component: {fileID: 214807338}
   - component: {fileID: 214807345}
   - component: {fileID: 214807346}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: gorrasR_0 (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1844,7 +1844,7 @@ GameObject:
   - component: {fileID: 216642541}
   - component: {fileID: 216642542}
   - component: {fileID: 216642543}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2113,7 +2113,7 @@ GameObject:
   - component: {fileID: 243059778}
   - component: {fileID: 243059785}
   - component: {fileID: 243059786}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0 (7)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2374,7 +2374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 248447810}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -2602,7 +2602,7 @@ GameObject:
   - component: {fileID: 369720735}
   - component: {fileID: 369720742}
   - component: {fileID: 369720743}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: gorrasR_0 (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2871,7 +2871,7 @@ GameObject:
   - component: {fileID: 441448274}
   - component: {fileID: 441448281}
   - component: {fileID: 441448282}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0 (4)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -3132,7 +3132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 447261717}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -3163,7 +3163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 459615065}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -5836,7 +5836,7 @@ GameObject:
   - component: {fileID: 625264942}
   - component: {fileID: 625264949}
   - component: {fileID: 625264950}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0 (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -6355,7 +6355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 675423980}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -6386,7 +6386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 680961730}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -6417,7 +6417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 712334421}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -7506,7 +7506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 737810115}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -7679,7 +7679,7 @@ GameObject:
   - component: {fileID: 814018968}
   - component: {fileID: 814018975}
   - component: {fileID: 814018976}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0 (6)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -9143,7 +9143,7 @@ GameObject:
   - component: {fileID: 906824893}
   - component: {fileID: 906824900}
   - component: {fileID: 906824901}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0 (8)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -9435,7 +9435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 916087233}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -9600,7 +9600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 993819360}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -9631,7 +9631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1007901033}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -9661,37 +9661,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -804730055518493173, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 791612617060036351, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
-      propertyPath: damageToGive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 791612617060036351, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
-      propertyPath: impactEffect
-      value: 
-      objectReference: {fileID: 3157097479901391752, guid: 53f43742cae4dc848b751c14bd19d0c3, type: 3}
-    - target: {fileID: 791612617060036351, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
-      propertyPath: pointsForKill
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 791612617060036351, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
-      propertyPath: rotationSpeed
-      value: -360
-      objectReference: {fileID: 0}
-    - target: {fileID: 791612617060036351, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
-      propertyPath: enemyDeathEffect
-      value: 
-      objectReference: {fileID: 1072542433935390886, guid: 6aee835fdc0795e4aadb664edeaf2b2b, type: 3}
     - target: {fileID: 2815915853690347215, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.17
+      value: -3.01
       objectReference: {fileID: 0}
     - target: {fileID: 2815915853690347215, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.98
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2815915853690347215, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9728,10 +9704,6 @@ PrefabInstance:
     - target: {fileID: 3534171047696982312, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
       propertyPath: m_Name
       value: OrangeShoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 3534171047696982312, guid: ef95d089f5b296d48b81af761d314fc3, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9862,7 +9834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1148385231}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -9928,8 +9900,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1241231164}
   - component: {fileID: 1241231165}
-  m_Layer: 0
-  m_Name: Win
+  - component: {fileID: 1241231166}
+  - component: {fileID: 1241231167}
+  m_Layer: 12
+  m_Name: Level_Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10002,6 +9976,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1241231166
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241231163}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.110005885}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.2264113}
+  m_EdgeRadius: 0
+--- !u!114 &1241231167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241231163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ee6b8e6e36ea34eb42cbcd3614b530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Level 2
 --- !u!1 &1251310152
 GameObject:
   m_ObjectHideFlags: 0
@@ -10011,7 +10043,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1251310153}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -10147,7 +10179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1298709692}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -10186,7 +10218,7 @@ GameObject:
   - component: {fileID: 1322511606}
   - component: {fileID: 1322511613}
   - component: {fileID: 1322511614}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0 (3)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -10499,7 +10531,7 @@ GameObject:
   - component: {fileID: 1332995117}
   - component: {fileID: 1332995118}
   - component: {fileID: 1332995119}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: gorras_0
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -10746,7 +10778,7 @@ GameObject:
   - component: {fileID: 1339689073}
   - component: {fileID: 1339689080}
   - component: {fileID: 1339689081}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0 (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -12287,7 +12319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1403986933}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -12318,7 +12350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1458675859}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -12349,7 +12381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1522445117}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -12380,7 +12412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1611839515}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -19326,7 +19358,7 @@ GameObject:
   - component: {fileID: 1697458724}
   - component: {fileID: 1697458725}
   - component: {fileID: 1697458726}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: gorras_0 (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -19565,7 +19597,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1722072973}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -19596,7 +19628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1740936218}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -19635,7 +19667,7 @@ GameObject:
   - component: {fileID: 1785631010}
   - component: {fileID: 1785631011}
   - component: {fileID: 1785631012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: gorrasR_0
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -19896,7 +19928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1796027521}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -19935,7 +19967,7 @@ GameObject:
   - component: {fileID: 1824663192}
   - component: {fileID: 1824663199}
   - component: {fileID: 1824663200}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0 (5)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -20196,7 +20228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1827475422}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -20320,7 +20352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1847803517}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -21567,7 +21599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3719cf8cfccd14bb23a899e8939053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPlayerHealth: 3
+  maxPlayerHealth: 50
   text: {fileID: 1980627501}
   isDead: 0
 --- !u!1 &1984662473
@@ -22975,7 +23007,7 @@ GameObject:
   - component: {fileID: 1989169741}
   - component: {fileID: 1989169745}
   - component: {fileID: 1989169746}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: gorras_0 (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -23327,7 +23359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2006972819}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -23364,7 +23396,7 @@ GameObject:
   - component: {fileID: 2008864906}
   - component: {fileID: 2008864910}
   - component: {fileID: 2008864911}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: gorras_0 (3)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -23590,7 +23622,7 @@ GameObject:
   - component: {fileID: 2009938196}
   - component: {fileID: 2009938203}
   - component: {fileID: 2009938204}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poliR_0 (9)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -24003,7 +24035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2078106330}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -25182,7 +25214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2124229746}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}

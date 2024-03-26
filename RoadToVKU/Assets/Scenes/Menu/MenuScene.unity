@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 172157070}
   - component: {fileID: 172157069}
   - component: {fileID: 172157068}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 1107163343}
   - component: {fileID: 1107163345}
   - component: {fileID: 1107163344}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,8 +541,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 1457167078}
   - component: {fileID: 1457167077}
   - component: {fileID: 1457167076}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: QuitGameBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ Transform:
   m_GameObject: {fileID: 1835630840}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.98, y: 0.69, z: 5.34}
+  m_LocalPosition: {x: -0.98, y: 0.69, z: 0}
   m_LocalScale: {x: 0.7307, y: 0.7034, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -838,7 +838,7 @@ GameObject:
   - component: {fileID: 1865533619}
   - component: {fileID: 1865533618}
   - component: {fileID: 1865533617}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: StartGameBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.99433964, b: 0.99433964, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -970,7 +970,7 @@ GameObject:
   - component: {fileID: 1923768514}
   - component: {fileID: 1923768516}
   - component: {fileID: 1923768515}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1347,7 +1347,7 @@ Transform:
   m_GameObject: {fileID: 1961535682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.41, y: -0.93, z: 3.29}
+  m_LocalPosition: {x: -0.41, y: -0.93, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
