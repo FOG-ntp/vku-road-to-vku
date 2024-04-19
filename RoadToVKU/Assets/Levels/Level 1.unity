@@ -1571,8 +1571,8 @@ GameObject:
   - component: {fileID: 214807343}
   - component: {fileID: 214807342}
   - component: {fileID: 214807341}
-  - component: {fileID: 214807339}
   - component: {fileID: 214807338}
+  - component: {fileID: 214807339}
   - component: {fileID: 214807345}
   - component: {fileID: 214807346}
   m_Layer: 11
@@ -1591,7 +1591,7 @@ Transform:
   m_GameObject: {fileID: 214807336}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.37, y: -0.02, z: 0}
+  m_LocalPosition: {x: 26.463, y: 0.001, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1611,13 +1611,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d6d975de40fe1b4ca63ae3518e00f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  moveRight: 0
+  moveSpeed: 1
+  moveRight: 1
   wallCheck: {fileID: 1403986933}
-  wallCheckRadius: 0
+  wallCheckRadius: 0.1
   whatIsWall:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   edgeCheck: {fileID: 2124229746}
 --- !u!95 &214807339
 Animator:
@@ -2598,8 +2598,8 @@ GameObject:
   - component: {fileID: 369720740}
   - component: {fileID: 369720739}
   - component: {fileID: 369720738}
-  - component: {fileID: 369720736}
   - component: {fileID: 369720735}
+  - component: {fileID: 369720736}
   - component: {fileID: 369720742}
   - component: {fileID: 369720743}
   m_Layer: 11
@@ -2618,7 +2618,7 @@ Transform:
   m_GameObject: {fileID: 369720733}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.411, y: 0.025, z: 0}
+  m_LocalPosition: {x: 17.924, y: 0.006, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2638,13 +2638,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d6d975de40fe1b4ca63ae3518e00f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  moveRight: 0
+  moveSpeed: 1
+  moveRight: 1
   wallCheck: {fileID: 1007901033}
-  wallCheckRadius: 0
+  wallCheckRadius: 0.1
   whatIsWall:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   edgeCheck: {fileID: 737810115}
 --- !u!95 &369720736
 Animator:
@@ -10076,7 +10076,7 @@ GameObject:
   - component: {fileID: 1285051428}
   - component: {fileID: 1285051429}
   m_Layer: 0
-  m_Name: Level Maneger
+  m_Name: Level Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19374,7 +19374,7 @@ Transform:
   m_GameObject: {fileID: 1697458717}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.65, y: 0.01, z: 0}
+  m_LocalPosition: {x: 7.899, y: 0.004, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19663,8 +19663,8 @@ GameObject:
   - component: {fileID: 1785631007}
   - component: {fileID: 1785631006}
   - component: {fileID: 1785631005}
-  - component: {fileID: 1785631009}
   - component: {fileID: 1785631010}
+  - component: {fileID: 1785631009}
   - component: {fileID: 1785631011}
   - component: {fileID: 1785631012}
   m_Layer: 11
@@ -19683,7 +19683,7 @@ Transform:
   m_GameObject: {fileID: 1785631002}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.355, y: 0.01, z: 0}
+  m_LocalPosition: {x: 4.825, y: 0.01, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19883,13 +19883,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d6d975de40fe1b4ca63ae3518e00f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  moveRight: 0
+  moveSpeed: 1
+  moveRight: 1
   wallCheck: {fileID: 1251310153}
-  wallCheckRadius: 0
+  wallCheckRadius: 0.1
   whatIsWall:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   edgeCheck: {fileID: 248447810}
 --- !u!114 &1785631011
 MonoBehaviour:
@@ -23638,7 +23638,7 @@ Transform:
   m_GameObject: {fileID: 2009938194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.02, y: -0.02, z: 0}
+  m_LocalPosition: {x: 25.994, y: -0.004, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
