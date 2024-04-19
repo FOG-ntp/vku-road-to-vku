@@ -62,6 +62,24 @@ public class PlayerController : MonoBehaviour
 
         moveVelocity = 0f;
 
+        //knockback
+        //if (knockbackCount <= 0)
+        //{
+        //    myRigidbody2D.velocity = new Vector2(moveVelocity, myRigidbody2D.velocity.y);
+        //}
+        //else
+        //{
+        //    if (knockFromRight)
+        //    {
+        //        myRigidbody2D.velocity = new Vector2(-knockback, knockback);
+        //    }
+        //    else
+        //    {
+        //        myRigidbody2D.velocity = new Vector2(knockback, knockback);
+        //    }
+        //    knockbackCount -= Time.deltaTime;
+        //}
+
         if (Input.GetKey(KeyCode.RightArrow))
         {
             //GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
@@ -110,4 +128,19 @@ public class PlayerController : MonoBehaviour
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
     }
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.transform.tag == "MovingPlatform")
+    //    {
+    //        transform.parent = other.transform;
+    //    }
+    //}
+
+    //void OnTriggerExit2D(Collider2D other)
+    //{
+    //    if (other.transform.tag == "MovingPlatform")
+    //    {
+    //        transform.parent = null;
+    //    }
+    //}
 }
