@@ -523,7 +523,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 692155552}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1467316831}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &692155552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -962,8 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b2b8bc340d80347ba0f773e9a6a6b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startLevel: 1
-  levelSelect: 
+  startLevel: Level 1
   playerLives: 0
   playerHealth: 0
 --- !u!1 &1735490711
@@ -1133,13 +1144,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 9a0baa98c28a73f40a294c0f03dca57d, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1467316831}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
