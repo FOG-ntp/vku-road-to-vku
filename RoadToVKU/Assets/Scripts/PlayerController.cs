@@ -50,17 +50,19 @@ public class PlayerController : MonoBehaviour
 
         anim.SetBool("Grounded", grounded);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
+        if (Input.GetButtonDown("Jump") && grounded)
         {
             Jump();
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow) && !doubleJumped && !grounded)
+        if (Input.GetButtonDown("Jump") && !doubleJumped && !grounded)
         {
             Jump();
             doubleJumped = true;
         }
 
-        moveVelocity = 0f;
+        //moveVelocity = 0f;
+
+        moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
 
         //knockback
         //if (knockbackCount <= 0)
@@ -106,13 +108,13 @@ public class PlayerController : MonoBehaviour
         }
 
         //shooting
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Fire1"))
         {
             Instantiate(orangerShoot, firePoint.position, firePoint.rotation);
             shotDelayCounter = shotDelay;
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetButton("Fire1"))
         {
             shotDelayCounter -= Time.deltaTime;
 
