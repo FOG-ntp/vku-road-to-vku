@@ -11,7 +11,7 @@ public class HealthManager : MonoBehaviour
     public bool isDead;
 
     private LevelManager levelManager;
-    //private LifeManager lifeSystem;
+    private LifeManager lifeSystem;
     //private TimeManager theTime;
 
     // Use this for initialization
@@ -19,10 +19,10 @@ public class HealthManager : MonoBehaviour
     {
         this.text = GetComponent<Text>();
         HealthManager.playerHealth = maxPlayerHealth;
-        //HealthManager.playerHealth = PlayerPrefs.GetInt("PlayerCurrentHealth");
-        this.levelManager = FindObjectOfType<LevelManager>();
-        this.isDead = false;
-        //this.lifeSystem = FindObjectOfType<LifeManager>();
+        HealthManager.playerHealth = PlayerPrefs.GetInt("PlayerCurrentHealth");
+        levelManager = FindObjectOfType<LevelManager>();
+        isDead = false;
+        lifeSystem = FindObjectOfType<LifeManager>();
         //this.theTime = FindObjectOfType<TimeManager>();
     }
 
@@ -32,9 +32,9 @@ public class HealthManager : MonoBehaviour
         if (HealthManager.playerHealth <= 0 && !this.isDead)
         {
             HealthManager.playerHealth = 0;
-            this.levelManager.RespawnPlayer();
-            this.isDead = true;
-            //this.lifeSystem.TakeLife();
+            levelManager.RespawnPlayer();
+            isDead = true;
+            this.lifeSystem.TakeLife();
             //this.theTime.ResetTime();
         }
 
@@ -44,13 +44,13 @@ public class HealthManager : MonoBehaviour
     public static void HurtPlayer(int damageToGive)
     {
         HealthManager.playerHealth -= damageToGive;
-        //PlayerPrefs.SetInt("PlayerCurrentHealth", HealthManager.playerHealth);
+        PlayerPrefs.SetInt("PlayerCurrentHealth", HealthManager.playerHealth);
     }
 
     public void FullHealth()
     {
         HealthManager.playerHealth = PlayerPrefs.GetInt("PlayerMaxHealth");
-        //PlayerPrefs.SetInt("PlayerCurrentHealth", HealthManager.playerHealth);
+        PlayerPrefs.SetInt("PlayerCurrentHealth", HealthManager.playerHealth);
     }
 
     public void KillPlayer()

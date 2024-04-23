@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,7 +9,7 @@ public class LevelManager : MonoBehaviour
     public GameObject respawnParticle;
     public float respawnDelay;
     public int pointPenaltyOnDeath;
-    //public HealthManager healthManager;
+    public HealthManager healthManager;
 
     private PlayerController player;
     private Renderer playerRenderer;
@@ -25,7 +24,7 @@ public class LevelManager : MonoBehaviour
         playerRenderer = player.GetComponent<Renderer>();
         playerRigidbody2D = player.GetComponent<Rigidbody2D>();
         camera = FindObjectOfType<CameraController>();
-        //this.healthManager = FindObjectOfType<HealthManager>();
+        healthManager = FindObjectOfType<HealthManager>();
     }
 
     // Update is called once per frame
@@ -46,15 +45,15 @@ public class LevelManager : MonoBehaviour
         playerRenderer.enabled = false;
         camera.isFollowing = false;
         ScoreManager.AddPoints(-pointPenaltyOnDeath);
-        //Debug.Log("Player Respawn");
+        Debug.Log("Player Respawn");
         yield return new WaitForSeconds(respawnDelay);
         playerRigidbody2D.velocity = new Vector2(0, 0);
         player.transform.position = currentCheckpoint.transform.position;
         player.knockbackCount = 0;
         player.enabled = true;
         playerRenderer.enabled = true;
-        //this.healthManager.FullHealth();
-        //this.healthManager.isDead = false;
+        healthManager.FullHealth();
+        healthManager.isDead = false;
         camera.isFollowing = true;
         Instantiate(respawnParticle, currentCheckpoint.transform.position, currentCheckpoint.transform.rotation);
     }

@@ -10,22 +10,22 @@ public class ScoreManager : MonoBehaviour
     public static void AddPoints(int pointsToAdd)
     {
         ScoreManager.score += pointsToAdd;
-        //PlayerPrefs.SetInt("CurrentPlayerScore", ScoreManager.score);
+        PlayerPrefs.SetInt("CurrentPlayerScore", ScoreManager.score);
     }
 
     public static void Reset()
     {
         ScoreManager.score = 0;
-        //PlayerPrefs.SetInt("CurrentPlayerScore", ScoreManager.score);
+        PlayerPrefs.SetInt("CurrentPlayerScore", ScoreManager.score);
     }
 
     void Start()
     {
         text = GetComponent<Text>();
 
-        ScoreManager.score = 0;
+        //ScoreManager.score = 0;
 
-        //ScoreManager.score = PlayerPrefs.GetInt("CurrentPlayerScore");
+        ScoreManager.score = PlayerPrefs.GetInt("CurrentPlayerScore");
     }
 
     void Update()
@@ -33,7 +33,7 @@ public class ScoreManager : MonoBehaviour
         if (ScoreManager.score < 0)
         {
             ScoreManager.score = 0;
-            //PlayerPrefs.SetInt("CurrentPlayerScore", ScoreManager.score);
+            PlayerPrefs.SetInt("CurrentPlayerScore", ScoreManager.score);
         }
 
         text.text = "" + ScoreManager.score;
