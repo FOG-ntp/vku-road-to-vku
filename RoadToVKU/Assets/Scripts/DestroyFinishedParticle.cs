@@ -8,15 +8,14 @@ public class DestroyFinishedParticle : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        this.particleSystem = GetComponent<ParticleSystem>();
+        particleSystem = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (this.particleSystem.isPlaying)
+        if (particleSystem.isPlaying)
         {
-
             return;
         }
 
