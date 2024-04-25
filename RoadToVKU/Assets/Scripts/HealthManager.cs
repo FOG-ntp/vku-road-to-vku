@@ -7,23 +7,26 @@ public class HealthManager : MonoBehaviour
     public static int playerHealth;
 
     public int maxPlayerHealth;
-    public Text text;
+    //public Text text;
+    public Slider healthBar;
     public bool isDead;
 
     private LevelManager levelManager;
     private LifeManager lifeSystem;
-    //private TimeManager theTime;
+    private TimeManager theTime;
 
     // Use this for initialization
     void Start()
     {
-        this.text = GetComponent<Text>();
+        //this.text = GetComponent<Text>();
+        healthBar = GetComponent<Slider>();
+
         HealthManager.playerHealth = maxPlayerHealth;
         HealthManager.playerHealth = PlayerPrefs.GetInt("PlayerCurrentHealth");
         levelManager = FindObjectOfType<LevelManager>();
         isDead = false;
         lifeSystem = FindObjectOfType<LifeManager>();
-        //this.theTime = FindObjectOfType<TimeManager>();
+        theTime = FindObjectOfType<TimeManager>();
     }
 
     // Update is called once per frame
@@ -34,11 +37,12 @@ public class HealthManager : MonoBehaviour
             HealthManager.playerHealth = 0;
             levelManager.RespawnPlayer();
             isDead = true;
-            this.lifeSystem.TakeLife();
-            //this.theTime.ResetTime();
+            lifeSystem.TakeLife();
+            theTime.ResetTime();
         }
 
-        this.text.text = "" + HealthManager.playerHealth;
+        //this.text.text = "" + HealthManager.playerHealth;
+        healthBar.value = HealthManager.playerHealth;
     }
 
     public static void HurtPlayer(int damageToGive)

@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startLevel: Level 1
   playerLives: 0
-  playerHealth: 5
+  playerHealth: 10
 --- !u!1 &1735490711
 GameObject:
   m_ObjectHideFlags: 0
