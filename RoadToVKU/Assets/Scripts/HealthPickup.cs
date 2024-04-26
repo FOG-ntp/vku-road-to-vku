@@ -10,7 +10,6 @@ public class HealthPickup : MonoBehaviour
     {
         if (other.GetComponent<PlayerController>() == null)
         {
-
             return;
         }
 

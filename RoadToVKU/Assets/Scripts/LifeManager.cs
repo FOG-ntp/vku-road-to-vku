@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class LifeManager : MonoBehaviour
 {
-    //public int startingLives;
+    // public int startingLives;
     public GameObject gameOverScreen;
     public string mainMenu;
     public float waitAfterGameOver;

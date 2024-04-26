@@ -27,7 +27,10 @@ public class TimeManager : MonoBehaviour
     {
 
         if (thePauseMenu.isPaused)
+        {
+
             return;
+        }
 
         countingTime -= Time.deltaTime;
 

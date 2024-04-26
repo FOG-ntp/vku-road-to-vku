@@ -18,7 +18,7 @@ public class LifePickUp : MonoBehaviour
         {
             lifeSystem.GiveLife();
             Debug.Log("picked up life");
-            //powerupSoundEffect.Play();
+            //this.powerupSoundEffect.Play();
             Destroy(gameObject);
         }
     }

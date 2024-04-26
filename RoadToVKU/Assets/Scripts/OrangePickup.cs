@@ -14,7 +14,7 @@ public class CoinPickup : MonoBehaviour
             return;
         }
 
-        ScoreManager.AddPoints(this.pointsToAdd);
+        ScoreManager.AddPoints(pointsToAdd);
         //this.coinSoundEffect.Play();
         Destroy(gameObject);
     }
