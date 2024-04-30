@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     public string startLevel;
     public int playerLives;
     public int playerHealth;
+    public int playerTime;
 
     public void NewGame()
     {
@@ -15,6 +16,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("CurrentPlayerScore", 0);
         PlayerPrefs.SetInt("PlayerCurrentHealth", playerHealth);
         PlayerPrefs.SetInt("PlayerMaxHealth", playerHealth);
+        PlayerPrefs.SetInt("PlayerCurrentTime", playerTime);
         Application.LoadLevel(startLevel);
     }
 

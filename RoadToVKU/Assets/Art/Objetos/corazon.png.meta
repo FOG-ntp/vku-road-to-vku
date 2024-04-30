@@ -105,7 +105,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -113,6 +113,69 @@ TextureImporter:
       bones: []
       spriteID: d7d519d0375bc24409110250b9fd7892
       internalID: 1103065873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c707272bccf6f8468b96910bc1dbfcd
+      internalID: 760855312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f915dc626597c324b81abeb7c39b1c8f
+      internalID: 271950014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b49baaf321641640abe0e978c2f881e
+      internalID: -1856326693
       vertices: []
       indices: 
       edges: []
@@ -129,6 +192,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       corazon_0: 1103065873
+      corazon_1: 760855312
+      corazon_2: 271950014
+      corazon_3: -1856326693
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

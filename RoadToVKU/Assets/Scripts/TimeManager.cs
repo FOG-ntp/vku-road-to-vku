@@ -46,4 +46,10 @@ public class TimeManager : MonoBehaviour
     {
         countingTime = startingTime;
     }
+
+    public void GiveTime()
+    {
+        countingTime += 5;
+        PlayerPrefs.SetFloat("PlayerCurrentTime", countingTime);
+    }
 }
