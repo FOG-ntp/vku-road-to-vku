@@ -6459,8 +6459,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   positions:
-  - {x: 29, y: -2.05, z: 0}
-  - {x: 32, y: -2.05, z: 0}
+  - {x: 30.5, y: -2.05, z: 0}
+  - {x: 33, y: -2.05, z: 0}
 --- !u!114 &463972050
 MonoBehaviour:
   m_ObjectHideFlags: 0
