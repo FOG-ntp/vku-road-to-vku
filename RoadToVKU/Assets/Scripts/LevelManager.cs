@@ -43,7 +43,7 @@ public class LevelManager : MonoBehaviour
         Instantiate(deathParticle, player.transform.position, player.transform.rotation);
         player.enabled = false;
         playerRenderer.enabled = false;
-        camera.isFollowing = false;
+        //camera.isFollowing = false;
         ScoreManager.AddPoints(-pointPenaltyOnDeath);
         Debug.Log("Player Respawn");
         yield return new WaitForSeconds(respawnDelay);
@@ -54,7 +54,7 @@ public class LevelManager : MonoBehaviour
         playerRenderer.enabled = true;
         healthManager.FullHealth();
         healthManager.isDead = false;
-        camera.isFollowing = true;
+        //camera.isFollowing = true;
         Instantiate(respawnParticle, currentCheckpoint.transform.position, currentCheckpoint.transform.rotation);
     }
 }
