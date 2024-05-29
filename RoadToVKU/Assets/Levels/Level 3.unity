@@ -6839,17 +6839,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
---- !u!114 &496175701 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2102326974349990373, guid: 1aeee8c7b541847429492222bcccb17d, type: 3}
-  m_PrefabInstance: {fileID: 496175700}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ef5cb43ee7f12742911bdd35e49a03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &537019050
 GameObject:
   m_ObjectHideFlags: 0
@@ -10309,7 +10298,7 @@ Transform:
   m_GameObject: {fileID: 903221274}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0.45, y: -0.39, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10327,10 +10316,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd066496e8447a04e8ae8ab2eced515f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 496175701}
-  isFollowing: 1
-  xOffset: 0
-  yOffset: 1.5
+  target: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+  smoothFactor: 0
+  minValues: {x: 0.45, y: -0.45, z: 0}
+  maxValue: {x: 37, y: -0.45, z: 0}
+  setupComplete: 0
+  ss: 0
 --- !u!1 &905345165
 GameObject:
   m_ObjectHideFlags: 0

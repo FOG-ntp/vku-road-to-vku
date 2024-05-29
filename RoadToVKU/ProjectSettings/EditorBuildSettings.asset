@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Level 5.unity
     guid: 94c6d2928a1a61b4a8a53283ea5c990a
+  - enabled: 1
+    path: Assets/Levels/Win Game.unity
+    guid: ff789d8960d303d478048f04f4eb61e9
   m_configObjects: {}

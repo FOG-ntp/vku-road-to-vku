@@ -9335,7 +9335,7 @@ Transform:
   m_GameObject: {fileID: 903221274}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.13, y: -0.17, z: 0}
+  m_LocalPosition: {x: 1.35, y: -0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9356,8 +9356,8 @@ MonoBehaviour:
   target: {fileID: 496175701}
   offset: {x: 0, y: 0, z: -101}
   smoothFactor: 2.5
-  minValues: {x: 0, y: 0, z: 0}
-  maxValue: {x: 21, y: 1.5, z: 0}
+  minValues: {x: 1.35, y: -0.3, z: 0}
+  maxValue: {x: 23.4, y: 1.5, z: 0}
   setupComplete: 0
   ss: 0
 --- !u!1 &904283265
